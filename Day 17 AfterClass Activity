@@ -1,0 +1,14 @@
+import math
+
+angle_degrees = 45
+
+angle_radians = math.radians(angle_degrees)
+
+sine = math.sin(angle_radians)
+cosine = math.cos(angle_radians)
+tangent = math.tan(angle_radians)
+
+
+print(f"Sine({angle_degrees}°)) = {sine}")
+print(f"Cosine({angle_degrees}°)) = {cosine}")
+print(f"Tangent({angle_degrees}°)) = {tangent}")
