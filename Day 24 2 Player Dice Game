@@ -1,0 +1,25 @@
+import random
+
+player1_score = 0 
+player2_score = 0
+Win_Score = 10
+
+p1_roll = random.randint(1,6)
+p2_roll = random.randint(1,6)
+
+print(f"Player 1 rolls: {p1_roll}")
+print(f"Player 2 rolls: {p2_roll}")
+
+if p1_roll > p2_roll:
+    player1_score += 1
+    print("Player 1 gets a point!")
+elif p2_roll > p1_roll:
+    player2_score += 1
+    print("Player 2 gets a point!")
+else:
+    print("Tie! No points this round")
+
+if player1_score == Win_Score:
+    print("Player 1 takes the crown!")
+else:
+    print("Player 2 win the game!")

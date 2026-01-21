@@ -1,0 +1,16 @@
+import random  
+
+Number = random.randint(1,20)
+
+while True:
+    guess = int(input("Guess a number between 1 and 20: "))
+
+    if guess < Number:
+        print("Guess higher")
+    elif guess > Number:
+        print("Guess lower")
+    else:
+        print("Correct! You guessed the number.")
+        break
+
+        
