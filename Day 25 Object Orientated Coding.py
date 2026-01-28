@@ -22,3 +22,4 @@ print(husky.can_fly)
 print(beagle.skin)
 
 german_shepard.bark()
+

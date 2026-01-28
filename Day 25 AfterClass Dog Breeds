@@ -1,0 +1,24 @@
+# Dog class
+class Dog:
+    # class variable
+    species = "Canine"
+
+    # constructor with instance variables
+    def __init__(self, breed, age):
+        self.breed = breed
+        self.age = age
+
+    # method to display details
+    def show_details(self):
+        print("Species:", Dog.species)
+        print("Breed:", self.breed)
+        print("Age:", self.age)
+        print()
+
+# creating objects of Dog class
+dog1 = Dog("Labrador", 3)
+dog2 = Dog("German Shepherd", 5)
+
+# displaying details
+dog1.show_details()
+dog2.show_details()
