@@ -1,0 +1,26 @@
+
+
+class Norway:
+    def capital(self):
+        print("The capital of norway is Oslo")
+
+    def language(self):
+        print("The native language spoken in Norway is Norwegian ")
+
+    def government(self):
+        print("Norway's governance includes a Full Democratic Constitutinal Monarchy and Parliamentary Monarchy")
+
+class Micronesia:
+    
+    def captial(self):
+      print("The capital of Micronesia is Palikir")
+
+    def language(self):
+        print("The language spoken in Micronesia is Chuukese")
+    
+    def government(self):
+        print("The governance of Micronesia is a Constitutional government")
+
+    
+ 
+
