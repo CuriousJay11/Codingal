@@ -29,7 +29,7 @@ button = Button(window,text= "Let's go",font=("EB Garmond",10), width=20,bg= "li
 button.place(x=100,y=400)
 
 textbox = Text(window,height=7)
-textbox.place(x=100,y=500)
+textbox.place(y=500,x=100)
 
 
 window.mainloop()

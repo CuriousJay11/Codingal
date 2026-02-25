@@ -1,0 +1,37 @@
+from tkinter import *
+from datetime import date
+
+window = Tk()
+window.title("Age Calculator")
+window.geometry("400x400")
+
+Label(window, text="Enter Birth Day").pack()
+day = Entry(window)
+day.pack()
+
+Label(window, text="Enter Birth Month").pack()
+month = Entry(window)
+month.pack()
+
+Label(window, text="Enter Birth Year").pack()
+year = Entry(window)
+year.pack()
+
+def age():
+    today = date.today()
+    y = int(year.get())
+    m = int(month.get())
+    d = int(day.get())
+
+    a = today.year - y
+    if (today.month, today.day) < (m, d):
+        a -= 1
+
+    result.config(text="Your Age is " + str(a))
+
+Button(window, text="Calculate Age", command=age).pack()
+
+result = Label(window, text="")
+result.pack()
+
+window.mainloop()
