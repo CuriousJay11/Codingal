@@ -1,0 +1,56 @@
+from tkinter import *
+
+window=Tk()
+
+window.title("Denomination Calculator") #Used to give the title 
+window.geometry("1000x1000") #size of window
+window.configure(bg="pink")
+
+def outcome():
+    Quantity500 = int(select500.get())
+    Total500 = Quantity500 * 500
+
+    Quantity100 = int(select100.get())
+    Total100 = Quantity100 * 100
+
+    Quantity50 = int(select50.get())
+    Total50 = Quantity50 * 50
+
+    TotalMoney = Total500 + Total100 + Total50
+    result.config(text=TotalMoney) #display the total money
+
+
+name1 = Label(window,text="Denomination Calculator",fg= "Black",font=("Cosmic Sans",30))
+name1.place(x=100,y=100)
+
+name2 = Label(window,text="Select 500 Rupee Notes",bg= "pink",fg= "Black",font=("Cosmic Sans",10))
+name2.place(x=200,y=200)
+
+name2 = Label(window,text="Select 100 Rupee Notes",bg= "pink",fg= "Black",font=("Cosmic Sans",10))
+name2.place(x=200,y=250)
+
+name2 = Label(window,text="Select 50 Rupee Notes",bg= "pink",fg= "Black",font=("Cosmic Sans",10))
+name2.place(x=200,y=300)
+
+select500 = Spinbox(window,from_=0,to=100)
+select500.place(x=375,y=200)
+
+select100 = Spinbox(window,from_=0,to=100)
+select100.place(x=375,y=250)
+
+select50 = Spinbox(window,from_=0,to=100)
+select50.place(x=375,y=300)
+
+button1 = Button(window,text="Calculate Total Money",bg= "white",fg= "Black",font=("Cosmic Sans",15),command=outcome)
+button1.place(x=200,y=350)
+
+result = Label(window,fg= "Black",font=("Cosmic Sans",30))
+result.place(x=200,y=450)
+
+
+
+
+
+
+
+window.mainloop()
